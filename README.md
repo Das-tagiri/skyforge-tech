@@ -77,7 +77,7 @@ python app.py
 
 ## Deployment
 
-* Deploy backend on **Render / Railway / Heroku**
+* Deploy https://skyforge-tech.onrender.com/
 * Use **Procfile**: `web: gunicorn app:app`
 * Set environment variables (`MAIL_USERNAME`, `MAIL_PASSWORD`, `RECEIVER_EMAIL`) on the platform
 
