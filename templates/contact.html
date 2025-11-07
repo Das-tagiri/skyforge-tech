@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}SkyForge Tech — Contact{% endblock %}
+{% block content %}
+<div class="row g-4">
+  <div class="col-lg-7">
+    <h2 class="fw-bold">Contact sales or request a demo</h2>
+    <p class="text-muted">Fill the form and we’ll get back within 1–2 business days.</p>
+
+    <form method="post" novalidate>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label" for="name">Name</label>
+          <input id="name" name="name" type="text" class="form-control" required>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label" for="email">Email</label>
+          <input id="email" name="email" type="email" class="form-control" required>
+        </div>
+
+        <div class="col-12">
+          <label class="form-label" for="company">Company (optional)</label>
+          <input id="company" name="company" type="text" class="form-control">
+        </div>
+
+        <div class="col-12">
+          <label class="form-label" for="message">Message</label>
+          <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+        </div>
+
+        <div class="col-12 d-flex gap-2">
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <button type="reset" class="btn btn-outline-secondary">Reset</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+  <div class="col-lg-5">
+    <div class="card border-0 shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Contact details</h5>
+        <p class="card-text text-muted mb-1"><strong>Email:</strong> youremail@gmail.com</p>
+        <p class="card-text text-muted mb-1"><strong>Phone:</strong> +91 98765 43210</p>
+        <p class="card-text text-muted"><strong>Location:</strong> Bengaluru, India</p>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <h6 class="fw-bold">Office hours</h6>
+      <p class="text-muted small mb-0">Mon–Fri: 9:00 AM — 6:00 PM IST</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}SkyForge Tech — Home{% endblock %}
+{% block content %}
+<header class="py-5">
+  <div class="row align-items-center gy-4">
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold">Build fast. Ship smarter. Scale effortlessly.</h1>
+      <p class="lead text-muted">SkyForge Tech provides developer tools that speed up your delivery pipeline.</p>
+      <div class="d-flex gap-2">
+        <a href="#features" class="btn btn-primary btn-lg">Explore features</a>
+        <a href="{{ url_for('contact') }}" class="btn btn-outline-secondary btn-lg">Request demo</a>
+      </div>
+    </div>
+    <div class="col-lg-6 d-none d-lg-block text-center">
+      <img src="{{ url_for('static', filename='images/hero.svg') }}" alt="hero" class="img-fluid hero-illustration">
+    </div>
+  </div>
+</header>
+
+<section id="features" class="py-5">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">Core features</h2>
+    <p class="text-muted">Automation, observability and fast pipelines.</p>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body">
+          <div class="feature-icon mb-3"><i class="bi bi-gear-fill fs-3"></i></div>
+          <h5 class="card-title">CI/CD Pipelines</h5>
+          <p class="card-text text-muted">Prebuilt pipelines, one-click setup.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body">
+          <div class="feature-icon mb-3"><i class="bi bi-cloud-arrow-up-fill fs-3"></i></div>
+          <h5 class="card-title">Cloud Deploy</h5>
+          <p class="card-text text-muted">Deploy to any cloud with same workflow.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body">
+          <div class="feature-icon mb-3"><i class="bi bi-shield-lock-fill fs-3"></i></div>
+          <h5 class="card-title">Security</h5>
+          <p class="card-text text-muted">Built-in checks and secure defaults.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
